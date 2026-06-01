@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jules Montoya — Diseñador de Interacción</title>
+  <meta name="description" content="Portfolio de Julian Esteban Montoya Rosas - Diseñador de Interacción. made in colombia.">
+  <meta name="theme-color" content="#0a0a0a">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=chillax@300,400,500,600,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div class="custom-cursor" id="cursor"></div>
+  <div class="custom-cursor-label" id="cursor-label">VER</div>
+
+  <!-- Loader -->
+  <div id="loader">
+    <div class="loader-simple">
+      <span class="loader-j">J</span><span class="loader-e">E</span>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-left">
+      <a href="#hero" class="nav-link">Inicio</a>
+      <a href="#work" class="nav-link">Trabajos</a>
+      <a href="#about" class="nav-link">Sobre mi</a>
+      <a href="#certificates" class="nav-link">Certificados</a>
+      <a href="#footer" class="nav-link">Contacto</a>
+    </div>
+    <div class="nav-right">
+      <span class="nav-location">made in colombia</span>
+      <span class="nav-clock" id="clock">00:00:00</span>
+      <a href="#footer" class="nav-contact">Contacto →</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <canvas id="particles-canvas"></canvas>
+    <div class="bg-grid"></div>
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+    <div class="glow-orb glow-orb-3"></div>
+    <div class="hero-content">
+      <div class="hero-top">
+        <div></div>
+      </div>
+      <div class="hero-title-container">
+        <h1 class="hero-title">Jules<span class="registered">®</span></h1>
+        <p class="hero-subtitle">Diseñador de Interacción</p>
+      </div>
+      <div class="hero-bottom">
+        <a href="#work" class="hero-work-link">Ver Proyectos <span>↓</span></a>
+        <div class="hero-stats">
+          <div class="hero-stat"><div class="hero-stat-value">5+</div><div class="hero-stat-label">Años Exp.</div></div>
+          <div class="hero-stat"><div class="hero-stat-value">20+</div><div class="hero-stat-label">Proyectos</div></div>
+          <div class="hero-stat"><div class="hero-stat-value">15+</div><div class="hero-stat-label">Clientes</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Section -->
+  <section id="work">
+    <div class="work-header">
+      <span class="work-title">Proyectos <span>Seleccionados</span></span>
+      <span class="work-title">2024 — 2026</span>
+    </div>
+    <div class="projects-list">
+      <div class="project-row" data-project="73software" data-code="JLSM-0001">
+        <span class="proj-num">01</span>
+        <span class="proj-name">73SOFTWARE.DEV</span>
+        <span class="proj-tags">Branding · UX/UI · Desarrollo Web</span>
+        <span class="proj-year">( 2026 )</span>
+        <span class="proj-indicator"></span>
+        <div class="proj-preview">
+          <div class="proj-preview-inner">
+            <img src="images/overlay-proyectos/73software.jpg" alt="73Software preview" class="img-placeholder">
+            <button class="proj-view-more">View More</button>
+          </div>
+        </div>
+      </div>
+      <div class="project-row" data-project="sube-nube" data-code="JLSM-0002">
+        <span class="proj-num">02</span>
+        <span class="proj-name">SUBE A LA NUBE</span>
+        <span class="proj-tags">Branding · UX/UI · Full-Stack</span>
+        <span class="proj-year">( 2026 )</span>
+        <span class="proj-indicator"></span>
+        <div class="proj-preview">
+          <div class="proj-preview-inner">
+            <img src="images/overlay-proyectos/sube-nube.jpg" alt="Sube a la Nube preview" class="img-placeholder">
+            <button class="proj-view-more">View More</button>
+          </div>
+        </div>
+      </div>
+      <div class="project-row" data-project="trebol" data-code="JLSM-0003">
+        <span class="proj-num">03</span>
+        <span class="proj-name">TREBOL COLOMBIA S.A.S.</span>
+        <span class="proj-tags">UX Research · Arquitectura Info · Figma</span>
+        <span class="proj-year">( 2025 )</span>
+        <span class="proj-indicator"></span>
+        <div class="proj-preview">
+          <div class="proj-preview-inner">
+            <img src="images/overlay-proyectos/trebol.jpg" alt="Trebol Colombia preview" class="img-placeholder">
+            <button class="proj-view-more">View More</button>
+          </div>
+        </div>
+      </div>
+      <div class="project-row" data-project="pedidos-click" data-code="JLSM-0004">
+        <span class="proj-num">04</span>
+        <span class="proj-name">PEDIDOS.CLICK</span>
+        <span class="proj-tags">Branding · Identidad Visual · Manual de Marca</span>
+        <span class="proj-year">( 2025 )</span>
+        <span class="proj-indicator"></span>
+        <div class="proj-preview">
+          <div class="proj-preview-inner">
+            <img src="images/overlay-proyectos/pedidos-click.jpg" alt="Pedidos.Click preview" class="img-placeholder">
+            <button class="proj-view-more">View More</button>
+          </div>
+        </div>
+      </div>
+      <div class="project-row" data-project="santoto-pro" data-code="JLSM-0005">
+        <span class="proj-num">05</span>
+        <span class="proj-name">SANTOTO+PRO</span>
+        <span class="proj-tags">App Design · Branding · Design System · Motion</span>
+        <span class="proj-year">( 2024 )</span>
+        <span class="proj-indicator"></span>
+        <div class="proj-preview">
+          <div class="proj-preview-inner">
+            <img src="images/overlay-proyectos/santoto-pro.jpg" alt="Santoto+Pro preview" class="img-placeholder">
+            <button class="proj-view-more">View More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about-container">
+      <div class="about-left">
+        <!-- Profile Image - Moved to About section -->
+        <div class="about-profile-image-wrapper">
+          <div class="profile-image-ring"></div>
+          <div class="profile-image-ring ring-2"></div>
+          <div class="profile-image-glow"></div>
+          <div class="profile-image-placeholder">
+            <img src="images/sobre-mi/foto-perfil.jpg" alt="Foto de Jules" class="profile-image-img">
+          </div>
+          <div class="profile-dots">
+            <span class="profile-dot"></span>
+            <span class="profile-dot"></span>
+            <span class="profile-dot"></span>
+          </div>
+        </div>
+        <h2 class="about-name">Jules</h2>
+        <p class="about-role">Diseñador de Interaccion</p>
+      </div>
+      <div class="about-right">
+        <p class="about-text">Especialista en la interseccion entre el diseño centrado en el usuario y el desarrollo de productos digitales funcionales. Transformo necesidades corporativas complejas en interfaces intuitivas. Investigo, diseño y gestiono en entornos tecnologicos de alto nivel.</p>
+        <!-- Experience Cards (moved to right) -->
+        <div class="experience-cards">
+          <div class="experience-card active" data-card="1">
+            <div class="card-header">
+              <span class="card-period">2022 - Present</span>
+              <div class="card-icon">✦</div>
+            </div>
+            <h3 class="card-title">Diseñador de Interaccion</h3>
+            <p class="card-subtitle">U.Santo Tomas - Tunja</p>
+            <div class="card-tags">
+              <span class="card-tag">UI/UX</span>
+              <span class="card-tag">Planeacion</span>
+              <span class="card-tag">ProductosDigitales</span>
+            </div>
+            <span class="card-number">01</span>
+          </div>
+          <div class="experience-card" data-card="2">
+            <div class="card-header">
+              <span class="card-period">2019 - 2020</span>
+              <div class="card-icon">◈</div>
+            </div>
+            <h3 class="card-title">Diseñador Grafico</h3>
+            <p class="card-subtitle">Tecnico SENA - Bogota</p>
+            <div class="card-tags">
+              <span class="card-tag">Branding</span>
+              <span class="card-tag">Ilustracion</span>
+              <span class="card-tag">Corporativo</span>
+            </div>
+            <span class="card-number">02</span>
+          </div>
+          <div class="card-dots">
+            <div class="card-dot active" data-dot="1"></div>
+            <div class="card-dot" data-dot="2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack Section -->
+  <section id="tech-stack">
+    <h3 class="about-stack-title">Stack Tecnologico</h3>
+    <div class="tech-carousel-wrapper">
+      <div class="tech-carousel" id="tech-carousel">
+        <div class="tech-carousel-track" id="tech-carousel-track">
+          <div class="tech-item"><img src="images/stack-tecnologico/figma.png" alt="Figma" class="tech-icon-img"><span class="tech-name">Figma</span></div>
+          <div class="tech-item"><img src="images/stack-tecnologico/framer.png" alt="Framer" class="tech-icon-img"><span class="tech-name">Framer</span></div>
+          <div class="tech-item"><img src="images/stack-tecnologico/html5.png" alt="HTML5" class="tech-icon-img"><span class="tech-name">HTML5</span></div>
+          <div class="tech-item"><img src="images/stack-tecnologico/css3.svg" alt="CSS3" class="tech-icon-img"><span class="tech-name">CSS3</span></div>
+          <div class="tech-item"><img src="images/stack-tecnologico/javascript.png" alt="JavaScript" class="tech-icon-img"><span class="tech-name">JavaScript</span></div>
+          <div class="tech-item"><img src="images/stack-tecnologico/tailwindcss.png" alt="Tailwind" class="tech-icon-img"><span class="tech-name">Tailwind</span></div>
+          <div class="tech-item"><img src="images/stack-tecnologico/nodejs.png" alt="Node.js" class="tech-icon-img"><span class="tech-name">Node.js</span></div>
+          <div class="tech-item"><img src="images/stack-tecnologico/wordpress.png" alt="WordPress" class="tech-icon-img"><span class="tech-name">WordPress</span></div>
+          <div class="tech-item"><img src="images/stack-tecnologico/github.png" alt="GitHub" class="tech-icon-img"><span class="tech-name">GitHub</span></div>
+          <div class="tech-item"><img src="images/stack-tecnologico/trello.png" alt="Trello" class="tech-icon-img"><span class="tech-name">Trello</span></div>
+          <div class="tech-item"><img src="images/stack-tecnologico/illustrator.png" alt="Illustrator" class="tech-icon-img"><span class="tech-name">Illustrator</span></div>
+          <div class="tech-item"><img src="images/stack-tecnologico/photoshop.png" alt="Photoshop" class="tech-icon-img"><span class="tech-name">Photoshop</span></div>
+          <div class="tech-item"><img src="images/stack-tecnologico/aftereffects.png" alt="After Effects" class="tech-icon-img"><span class="tech-name">After Effects</span></div>
+          <div class="tech-item"><img src="images/stack-tecnologico/premierepro.png" alt="Premiere" class="tech-icon-img"><span class="tech-name">Premiere</span></div>
+          <div class="tech-item"><img src="images/stack-tecnologico/claude.png" alt="Claude" class="tech-icon-img"><span class="tech-name">Claude</span></div>
+          <div class="tech-item"><img src="images/stack-tecnologico/vscode.svg" alt="VS Code" class="tech-icon-img"><span class="tech-name">VS Code</span></div>
+          <div class="tech-item"><img src="images/stack-tecnologico/notion.png" alt="Notion" class="tech-icon-img"><span class="tech-name">Notion</span></div>
+          <div class="tech-item"><img src="images/stack-tecnologico/unity.png" alt="Unity" class="tech-icon-img"><span class="tech-name">Unity</span></div>
+        </div>
+      </div>
+      <div class="tech-carousel-fade tech-fade-left"></div>
+      <div class="tech-carousel-fade tech-fade-right"></div>
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+  <section id="certificates">
+    <div class="cert-header">
+      <span class="cert-title">Certificados <span>& Diplomas</span></span>
+      <span class="cert-subtitle">Formacion continua</span>
+    </div>
+    <div class="cert-cta-wrapper">
+      <button class="cert-cta-btn" id="cert-cta-btn">
+        <span class="cert-cta-text">Ver Certificados</span>
+        <span class="cert-cta-arrow">↓</span>
+      </button>
+    </div>
+    <div class="cert-content" id="cert-content">
+      <div class="cert-carousel-container">
+        <div class="cert-carousel" id="cert-carousel">
+          <div class="cert-carousel-track" id="cert-carousel-track">
+          <!-- Certificate Card 1 -->
+          <div class="cert-card">
+            <div class="cert-card-image">
+              <img src="images/diplomas-certificados/diploma-1.jpg" alt="UX/UI Design Professional" class="cert-img">
+            </div>
+            <div class="cert-card-info">
+              <h4 class="cert-card-title">Claude Code in action</h4>
+              <span class="cert-card-org">ANTHROPIC</span>
+              <span class="cert-card-year">2026</span>
+            </div>
+          </div>
+          <!-- Certificate Card 2 -->
+          <div class="cert-card">
+            <div class="cert-card-image">
+              <img src="images/diplomas-certificados/diploma-2.jpg" alt="Frontend Development" class="cert-img">
+            </div>
+            <div class="cert-card-info">
+              <h4 class="cert-card-title">Inmersión Inteligencia Artificial en la Práctica</h4>
+              <span class="cert-card-org">Daxus</span>
+              <span class="cert-card-year">2026</span>
+            </div>
+          </div>
+          <!-- Certificate Card 3 -->
+          <div class="cert-card">
+            <div class="cert-card-image">
+              <img src="images/diplomas-certificados/diploma-3.jpg" alt="Adobe Certified Professional" class="cert-img">
+            </div>
+            <div class="cert-card-info">
+              <h4 class="cert-card-title">Buenas prácticas de UX</h4>
+              <span class="cert-card-org">NETZUN</span>
+              <span class="cert-card-year">2025</span>
+            </div>
+          </div>
+          <!-- Certificate Card 4 -->
+          <div class="cert-card">
+            <div class="cert-card-image">
+              <img src="images/diplomas-certificados/diploma-4.jpg" alt="Motion Graphics" class="cert-img">
+            </div>
+            <div class="cert-card-info">
+              <h4 class="cert-card-title">Introducción al Diseño de Experiencia del Usuario</h4>
+              <span class="cert-card-org">NETZUN</span>
+              <span class="cert-card-year">2026</span>
+            </div>
+          </div>
+          <!-- Certificate Card 5 -->
+          <div class="cert-card">
+            <div class="cert-card-image">
+              <img src="images/diplomas-certificados/diploma-5.jpg" alt="Design Systems" class="cert-img">
+            </div>
+            <div class="cert-card-info">
+              <h4 class="cert-card-title">Usabilidad para plataformas digitales</h4>
+              <span class="cert-card-org">NETZUN</span>
+              <span class="cert-card-year">2026</span>
+            </div>
+          </div>
+          <!-- Certificate Card 6 -->
+          <div class="cert-card">
+            <div class="cert-card-image">
+              <img src="images/diplomas-certificados/diploma-6.jpg" alt="Interaction Design" class="cert-img">
+            </div>
+            <div class="cert-card-info">
+              <h4 class="cert-card-title">Proceso creativo UX</h4>
+              <span class="cert-card-org">NETZUN</span>
+              <span class="cert-card-year">2026</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cert-carousel-fade cert-fade-left"></div>
+      <div class="cert-carousel-fade cert-fade-right"></div>
+      <div class="cert-hint">← Arrastra para explorar →</div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Project Detail Panel -->
+  <div id="project-detail">
+    <div class="detail-bar">
+      <button class="detail-close" id="detail-close">
+        <span class="close-arrow">←</span>
+        <span class="close-text">Volver</span>
+      </button>
+      <span class="detail-project-code" id="detail-code">JLSM-0001</span>
+      <span class="detail-url" id="detail-url"></span>
+    </div>
+    <div class="detail-images">
+      <div class="detail-img-placeholder square" id="detail-img-1">
+        <img src="images/detalle-proyectos/73/VP.JPG " alt="Vista Principal" class="detail-img">
+        <span class="img-label">Vista Principal</span>
+      </div>
+      <div class="detail-img-placeholder square" id="detail-img-2">
+        <img src="images/detalle-proyectos/detalle-generico.jpg" alt="Detalles UI" class="detail-img">
+        <span class="img-label">Detalles UI</span>
+      </div>
+      <div class="detail-img-placeholder square" id="detail-img-3">
+        <img src="images/detalle-proyectos/detalle-generico.jpg" alt="Componentes" class="detail-img">
+        <span class="img-label">Componentes</span>
+      </div>
+    </div>
+    <div class="detail-info">
+      <div class="detail-meta-left">
+        <p class="meta-year">©2026</p>
+        <p id="detail-category" class="meta-category">Branding · UX/UI</p>
+        <p class="meta-location">made in colombia</p>
+      </div>
+      <div class="detail-content">
+        <h2 id="detail-title" class="chillax">SUBE A LA NUBE</h2>
+        <div class="detail-desc-container">
+          <p id="detail-desc">Descripcion del proyecto.</p>
+          <div class="detail-highlights">
+            <div class="highlight-item"><span class="highlight-icon">◈</span><span class="highlight-text" id="highlight-1">Research & Strategy</span></div>
+            <div class="highlight-item"><span class="highlight-icon">◉</span><span class="highlight-text" id="highlight-2">UI/UX Design</span></div>
+            <div class="highlight-item"><span class="highlight-icon">✦</span><span class="highlight-text" id="highlight-3">Development</span></div>
+          </div>
+        </div>
+        <div class="detail-stats">
+          <div class="detail-stat"><span class="stat-value" id="stat-1">12</span><span class="stat-label">Semanas</span></div>
+          <div class="detail-stat"><span class="stat-value" id="stat-2">50+</span><span class="stat-label">Pantallas</span></div>
+          <div class="detail-stat"><span class="stat-value" id="stat-3">100%</span><span class="stat-label">Satisfaccion</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-glass"></div>
+    <div class="footer-container">
+      <div class="footer-top">
+        <h2 class="footer-name">Jules<span class="footer-registered">®</span></h2>
+      </div>
+      <p class="footer-tagline">Diseño & Codigo hecho con intencion. Cada pixel cuenta una historia.</p>
+      <div class="footer-links">
+        <a href="mailto:email@ejemplo.com" class="footer-link">
+          <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          <span class="link-text">Email</span>
+        </a>
+        <a href="https://linkedin.com" target="_blank" class="footer-link">
+          <svg class="link-icon" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg>
+          <span class="link-text">LinkedIn</span>
+        </a>
+        <a href="https://instagram.com" target="_blank" class="footer-link">
+          <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          <span class="link-text">Instagram</span>
+        </a>
+        <a href="https://behance.net" target="_blank" class="footer-link">
+          <svg class="link-icon" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M6.938 4.503c.702 0 1.34.06 1.92.188.577.13 1.07.33 1.485.602.414.27.737.63.967 1.08.228.45.343 1.01.343 1.68 0 .72-.16 1.32-.487 1.81-.32.49-.8.89-1.44 1.19.87.252 1.52.706 1.96 1.357.44.654.66 1.44.66 2.36 0 .735-.14 1.38-.42 1.93-.28.56-.66 1.02-1.14 1.39-.48.37-1.04.64-1.69.82-.64.18-1.32.27-2.04.27H0V4.51h6.938v-.007zM6.545 10.16c.593 0 1.08-.15 1.46-.45.38-.30.57-.74.57-1.32 0-.32-.06-.58-.17-.79-.12-.21-.27-.38-.46-.50-.19-.12-.40-.20-.64-.25-.24-.05-.50-.07-.76-.07H3.48v3.48h3.06v.01zm.35 5.64c.28 0 .55-.03.81-.10.26-.07.48-.18.68-.33.20-.15.35-.35.47-.60.11-.25.17-.56.17-.92 0-.73-.21-1.26-.62-1.58-.42-.32-.97-.48-1.66-.48H3.48v4.01h3.41zm8.68-.28c.41.40.99.60 1.73.60.54 0 1.00-.13 1.39-.40.38-.27.62-.55.71-.86h2.35c-.60 1.88-2.00 2.82-4.22 2.82-1.15 0-2.05-.22-2.72-.67-.67-.45-1.15-.99-1.44-1.63-.29-.64-.44-1.30-.44-1.98 0-.72.15-1.38.46-1.98.31-.60.76-1.08 1.36-1.45.60-.37 1.33-.55 2.18-.55.89 0 1.63.18 2.23.55.60.37 1.06.83 1.39 1.39.33.56.54 1.13.63 1.72.06.37.08.68.07.93h-6.13c.04.86.27 1.54.69 1.94zm3.01-4.72c-.32-.30-.81-.45-1.41-.45-.45 0-.82.08-1.11.24-.29.16-.52.36-.69.59-.17.23-.28.47-.34.71-.06.20-.09.38-.10.53h4.25c-.1-.58-.28-1.02-.60-1.33v.01zM15.37 5.09h4.68v1.17h-4.68V5.09z"/></svg>
+          <span class="link-text">Behance</span>
+        </a>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-domain">jules<span>.</span>design</span>
+        <span class="footer-copyright">© 2026 Todos los derechos reservados</span>
+        <a href="#hero" class="footer-back-top"><span class="back-top-arrow">↑</span><span class="back-top-text">Volver arriba</span></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
